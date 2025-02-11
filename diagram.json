@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Edna Rodrigues de Souza",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": -60.85,
+      "left": -236.45,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -29.8,
+      "left": -142.2,
+      "rotate": 270,
+      "attrs": { "hornColor": "#0000ff" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": -44,
+      "left": -325.3,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 119.15,
+      "left": -307.2,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "servo1:PWM", "pico:GP22", "blue", [ "v19.2", "h-95.8", "v-76.8" ] ],
+    [ "pico:3V3", "servo1:V+", "red", [ "h29.11", "v134.4", "h76.7" ] ],
+    [ "pico:GND.8", "servo1:GND", "black", [ "h38.71", "v144" ] ],
+    [ "pico:GND.4", "r1:2", "black", [ "h0" ] ],
+    [ "r1:1", "rgb1:COM", "black", [ "v0" ] ],
+    [ "pico:GP11", "rgb1:G", "green", [ "h0" ] ],
+    [ "rgb1:B", "pico:GP12", "blue", [ "v0" ] ],
+    [ "rgb1:R", "pico:GP13", "red", [ "v105.6" ] ]
+  ],
+  "dependencies": {}
+}
