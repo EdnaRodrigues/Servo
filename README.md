@@ -89,10 +89,10 @@ Após clonar o repositório:
 #define PWM_PIN 22 // Pino conectado a GPIO como PWM
 ```
 O número 22 (valor original) pode ser trocado pelos valores:
-    11 - LED na cor verde;
-    12 - LED na cor azul;
-    13 - LED na cor vermelha;
-    22 - Servo motor (wokwi). */
+- 11 - LED na cor verde;
+- 12 - LED na cor azul;
+- 13 - LED na cor vermelha;
+- 22 - Servo motor (wokwi).
 
 2. Compile o código novamente.
 3. Abra o painel do simulador Wokwi no VS Code.
@@ -114,9 +114,9 @@ O número 22 (valor original) pode ser trocado pelos valores:
 #define PWM_PIN 22 // Pino conectado a GPIO como PWM
 ```
 O número 22 deverá ser trocado por um dos valores a seguir:
-    11 - LED na cor verde;
-    12 - LED na cor azul;
-    13 - LED na cor vermelha.
+- 11 - LED na cor verde;
+- 12 - LED na cor azul;
+- 13 - LED na cor vermelha.
 2. Compile o código novamente.
 
 #### **3. Upload de Arquivo **`servo.uf2`**
@@ -134,13 +134,13 @@ O número 22 deverá ser trocado por um dos valores a seguir:
 
 ### **Comportamento Observado**
 
-> É possível ver a mudança abrupta após os ciclos de 5 segundos, assim como a partir dos 15 segundos de programa o sistema faz a mudança gradual de intensidade da luz. Como esperado ao alterarmos a tensão média fornecida com o PWM.
+É possível ver a mudança abrupta após os ciclos de 5 segundos, assim como a partir dos 15 segundos de programa o sistema faz a mudança gradual de intensidade da luz. Como esperado ao alterarmos a tensão média fornecida com o PWM.
 
 ---
 
 ## 📽️ Vídeo de Demonstração
 
-[Assista ao vídeo explicativo aqui!]\(conter link)
+[Assista ao vídeo explicativo aqui!](https://youtu.be/DXyqvSCaMXw)
 
 ---
 
